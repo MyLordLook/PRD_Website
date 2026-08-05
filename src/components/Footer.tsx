@@ -58,7 +58,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <Link to="/" className="inline-block mb-3">
               <img
-                src="/logo-black.svg"
+                src="/Logo/logo black.png"
                 alt="Lord Look"
                 className="dark:hidden"
                 height={FOOTER_LOGO_CONFIG.height}
@@ -66,7 +66,7 @@ export default function Footer() {
                 style={{ height: FOOTER_LOGO_CONFIG.height, width: 'auto' }}
               />
               <img
-                src="/logo-white.svg"
+                src="/Logo/logo white.png"
                 alt="Lord Look"
                 className="hidden dark:block"
                 height={FOOTER_LOGO_CONFIG.height}

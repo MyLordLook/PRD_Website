@@ -114,7 +114,7 @@ export default function Navbar() {
             <div className="flex justify-center w-1/3">
               <Link to="/" className="flex items-center">
                 <img
-                  src={scrolled || !isHome ? '/logo-black.svg' : '/logo-white.svg'}
+                  src={scrolled || !isHome ? '/Logo/logo black.png' : '/Logo/logo white.png'}
                   alt="Lord Look"
                   height={LOGO_CONFIG.height}
                   width={LOGO_CONFIG.width}
@@ -122,7 +122,7 @@ export default function Navbar() {
                   style={{ height: LOGO_CONFIG.height, width: 'auto' }}
                 />
                 <img
-                  src={scrolled || !isHome ? '/logo-black.svg' : '/logo-white.svg'}
+                  src={scrolled || !isHome ? '/Logo/logo black.png' : '/Logo/logo white.png'}
                   alt="Lord Look"
                   height={LOGO_CONFIG.mobileHeight}
                   width={LOGO_CONFIG.mobileWidth}
@@ -213,13 +213,13 @@ export default function Navbar() {
               </button>
               <Link to="/" onClick={() => setMenuOpen(false)} className="flex items-center">
                 <img
-                  src="/logo-black.svg"
+                  src="/Logo/logo black.png"
                   alt="Lord Look"
                   className="dark:hidden"
                   style={{ height: LOGO_CONFIG.mobileHeight, width: 'auto' }}
                 />
                 <img
-                  src="/logo-white.svg"
+                  src="/Logo/logo white.png"
                   alt="Lord Look"
                   className="hidden dark:block"
                   style={{ height: LOGO_CONFIG.mobileHeight, width: 'auto' }}
@@ -274,21 +274,26 @@ export default function Navbar() {
             {/* Blurred background */}
             <div className="absolute inset-0">
               <img
-                src="https://images.pexels.com/photos/1462637/pexels-photo-1462637.jpeg?auto=compress&cs=tinysrgb&w=1400"
+                src="/Search_Bar/dolphin 6.png"
                 alt=""
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-black/55 backdrop-blur-md" />
             </div>
 
-            {/* Close button */}
-            <button
-              onClick={() => setSearchOpen(false)}
-              className="absolute top-5 right-6 text-white hover:opacity-60 transition-opacity z-10"
-              aria-label="Close search"
-            >
-              <X size={24} strokeWidth={1.5} />
-            </button>
+            {/* Top bar with close button */}
+              <div className="relative z-10 flex items-center justify-end px-5 sm:px-8 h-14 shrink-0">
+               <button
+                  onClick={() => setSearchOpen(false)}
+                  className="flex items-center gap-2 text-white hover:opacity-60 transition-opacity"
+                  aria-label="Close search"
+                >
+                  <X size={22} strokeWidth={1.5} />
+                  <span className="label-upper text-[10px] tracking-widest">
+                    Close
+                  </span>
+                </button>
+              </div>
 
             {/* Search content */}
             <div className="relative z-10 flex flex-col justify-center flex-1 px-8 sm:px-16 md:px-24 max-w-5xl mx-auto w-full">

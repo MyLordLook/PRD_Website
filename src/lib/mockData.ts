@@ -9,24 +9,26 @@ export const MOCK_CATEGORIES: Category[] = [
 
 export const MOCK_PRODUCTS: Product[] = [
   {
-    id: 'p-001', code: 'LL-TS-001', name: 'Classic White Essential Tee',
+    id: 'p-001', code: 'LL-TS-001', name: 'Waves off kanagawa',
     description: 'Our signature premium cotton t-shirt. Crafted from 100% ring-spun cotton for an exceptionally soft feel. The perfect wardrobe staple.',
     price: 799, original_price: 1299, category_id: 'cat-1', brand: 'LordLook',
     tags: ['bestseller', 'casual', 'cotton'],
     colors: [
       { name: 'White', hex: '#FFFFFF' },
-      { name: 'Black', hex: '#1A1A1A' },
-      { name: 'Navy', hex: '#1E3A5F' },
-      { name: 'Olive', hex: '#556B2F' },
+      { name: 'Beige', hex: '#d1c29c' },
+
     ],
     keywords: ['white tshirt', 'basic tee', 'cotton tshirt', 'essential tee', 'plain tshirt', 'everyday wear'],
     is_trending: true, is_featured: true, is_active: true,
     rating_avg: 4.5, rating_count: 128, created_at: '', updated_at: '',
     product_images: [
-      { id: 'img-1', product_id: 'p-001', url: 'https://images.pexels.com/photos/1656684/pexels-photo-1656684.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Classic White Tee', sort_order: 0 },
-      { id: 'img-2', product_id: 'p-001', url: 'https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Classic White Tee back', sort_order: 1 },
-      { id: 'img-3', product_id: 'p-001', url: 'https://images.pexels.com/photos/1021693/pexels-photo-1021693.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Classic White Tee detail', sort_order: 2 },
-      { id: 'img-4', product_id: 'p-001', url: 'https://images.pexels.com/photos/1192609/pexels-photo-1192609.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Classic White Tee lifestyle', sort_order: 3 },
+      { id: 'img-1', product_id: 'p-001', url: '/Products/PD1-1.jpg', alt: 'Classic White Tee', sort_order: 0 },
+      { id: 'img-2', product_id: 'p-001', url: '/Products/PD1-2.png', alt: 'Classic White Tee back', sort_order: 1 },
+      { id: 'img-3', product_id: 'p-001', url: '/Products/PD1-3.png', alt: 'Classic White Tee detail', sort_order: 2 },
+      { id: 'img-4', product_id: 'p-001', url: '/Products/PD1-4.png', alt: 'Classic White Tee lifestyle', sort_order: 3 },
+      { id: 'img-5', product_id: 'p-001', url: '/Products/PD1-5.png', alt: 'Classic White Tee alternate', sort_order: 4 },
+      { id: 'img-6', product_id: 'p-001', url: '/Products/PD1-6.png', alt: 'Classic White Tee alternate', sort_order: 5 }
+
     ],
     product_sizes: [
       { id: 's1', product_id: 'p-001', size: 'S', stock: 15 },
@@ -37,23 +39,25 @@ export const MOCK_PRODUCTS: Product[] = [
     ],
   },
   {
-    id: 'p-002', code: 'LL-SH-002', name: 'Oxford Slim-Fit Shirt',
+    id: 'p-002', code: 'LL-SH-002', name: 'Dolphin',
     description: 'A modern take on the classic Oxford shirt. Tailored slim fit with fine cotton poplin fabric. Ideal for smart-casual occasions.',
     price: 1599, original_price: 2499, category_id: 'cat-2', brand: 'LordLook',
     tags: ['formal', 'slim-fit', 'oxford'],
     colors: [
-      { name: 'Light Blue', hex: '#B0C4DE' },
-      { name: 'White', hex: '#FFFFFF' },
-      { name: 'Pink', hex: '#F4C2C2' },
-    ],
+  { name: 'Royal Blue', hex: '#3E5F9E' },
+  { name: 'Lavender', hex: '#7D7DB7' },
+],
     keywords: ['oxford shirt', 'formal shirt', 'office wear', 'slim fit shirt', 'dress shirt', 'business casual'],
     is_trending: true, is_featured: false, is_active: true,
     rating_avg: 4.7, rating_count: 89, created_at: '', updated_at: '',
     product_images: [
-      { id: 'img-5', product_id: 'p-002', url: 'https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Oxford Shirt front', sort_order: 0 },
-      { id: 'img-6', product_id: 'p-002', url: 'https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Oxford Shirt styled', sort_order: 1 },
-      { id: 'img-7', product_id: 'p-002', url: 'https://images.pexels.com/photos/2897531/pexels-photo-2897531.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Oxford Shirt close', sort_order: 2 },
-      { id: 'img-8', product_id: 'p-002', url: 'https://images.pexels.com/photos/1852759/pexels-photo-1852759.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Oxford Shirt back', sort_order: 3 },
+      { id: 'img-5', product_id: 'p-002', url: '/Products/PD2-1.png', alt: 'Oxford Shirt front', sort_order: 0 },
+      { id: 'img-6', product_id: 'p-002', url: '/Products/PD2-2.png', alt: 'Oxford Shirt styled', sort_order: 1 },
+      { id: 'img-7', product_id: 'p-002', url: '/Products/PD2-3.png', alt: 'Oxford Shirt close', sort_order: 2 },
+      { id: 'img-8', product_id: 'p-002', url: '/Products/PD2-4.png', alt: 'Oxford Shirt back', sort_order: 3 },
+      { id: 'img-9', product_id: 'p-002', url: '/Products/PD2-5.png', alt: 'Oxford Shirt back', sort_order: 4 },
+      { id: 'img-10', product_id: 'p-002', url: '/Products/PD2-6.png', alt: 'Oxford Shirt back', sort_order: 5 },
+
     ],
     product_sizes: [
       { id: 's6', product_id: 'p-002', size: 'S', stock: 8 },
@@ -61,7 +65,7 @@ export const MOCK_PRODUCTS: Product[] = [
       { id: 's8', product_id: 'p-002', size: 'L', stock: 14 },
       { id: 's9', product_id: 'p-002', size: 'XL', stock: 7 },
     ],
-  },
+  },   /*  >>>>>>>>> disbaled
   {
     id: 'p-003', code: 'LL-HD-003', name: 'Premium Fleece Hoodie',
     description: 'Plush 300GSM fleece hoodie with a kangaroo pocket and adjustable drawstring. Built for comfort through every season.',
@@ -224,7 +228,7 @@ export const MOCK_PRODUCTS: Product[] = [
       { id: 's35', product_id: 'p-008', size: 'L', stock: 8 },
       { id: 's36', product_id: 'p-008', size: 'XL', stock: 5 },
     ],
-  },
+  },     >>>>>>>>> disbaled */
 ];
 
 export const ALL_COLORS = [

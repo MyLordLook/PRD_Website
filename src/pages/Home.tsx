@@ -9,32 +9,32 @@ import ProductCard from '../components/ProductCard';
 const SLIDES = [
   {
     id: 1,
-    tagline: 'The Fluidity of\nTailored Forms',
-    img: '/banner2.jpg',
+    tagline: '',
+    img: '/Banner/banner1.jpg',
     link: '/products',
   },
   {
     id: 2,
     tagline: 'Structure Meets\nSensuality',
-    img: 'https://images.pexels.com/photos/1021693/pexels-photo-1021693.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    img: '/Banner/banner2.png',
     link: '/products?category=cat-1',
   },
   {
     id: 3,
     tagline: 'Refined in Every\nDetail',
-    img: 'https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    img: '/Banner/banner3.jpg',
     link: '/products?category=cat-2',
   },
   {
     id: 4,
     tagline: 'The New Season\nCollection',
-    img: 'https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    img: '/Banner/banner4.jpg',
     link: '/products?category=cat-3',
   },
   {
     id: 5,
     tagline: 'Wear What\nMatters',
-    img: 'https://images.pexels.com/photos/1852759/pexels-photo-1852759.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    img: '/Banner/banner5.jpg',
     link: '/products',
   },
 ];
@@ -253,7 +253,7 @@ export default function Home() {
         variants={fadeUp}
       >
         <img
-          src="https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=1400"
+          src="/banner6.png"
           alt="Editorial"
           className="w-full h-full object-cover"
           loading="lazy"
@@ -275,6 +275,8 @@ export default function Home() {
       {/* ════════════════════════════════
           EDITORIAL FEATURE — full-width
       ════════════════════════════════ */}
+
+      {/* ════════════════════════════════ 
       <section className="max-w-5xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12 items-end"
@@ -308,7 +310,8 @@ export default function Home() {
             </Link>
           </div>
         </motion.div>
-      </section>
+      </section> 
+      ════════════════════════════════ */}
 
       {/* ════════════════════════════════
           BULK ORDERS CTA
