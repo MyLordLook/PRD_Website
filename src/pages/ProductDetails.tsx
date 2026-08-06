@@ -18,11 +18,11 @@ const MOCK_REVIEWS = [
 
 
 const SIZE_GUIDE = [
-  { size: 'S', chest: '36"', waist: '30"', length: '26"' },
-  { size: 'M', chest: '38"', waist: '32"', length: '27"' },
-  { size: 'L', chest: '40"', waist: '34"', length: '28"' },
-  { size: 'XL', chest: '42"', waist: '36"', length: '29"' },
-  { size: 'XXL', chest: '44"', waist: '38"', length: '30"' },
+  { size: 'XS', chest: '40"', length: '25.5"', shoulder: '19"', sleeve: '8.5"' },
+  { size: 'S', chest: '42"', length: '26.5"', shoulder: '20"', sleeve: '9"' },
+  { size: 'M', chest: '44"', length: '27.5"', shoulder: '21"', sleeve: '9.5"' },
+  { size: 'L', chest: '46"', length: '28"', shoulder: '22"', sleeve: '10"' },
+  { size: 'XL', chest: '48"', length: '29.5"', shoulder: '23"', sleeve: '10.5"' },
 ];
 
 export default function ProductDetails() {

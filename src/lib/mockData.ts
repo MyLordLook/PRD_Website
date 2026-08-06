@@ -10,7 +10,7 @@ export const MOCK_CATEGORIES: Category[] = [
 export const MOCK_PRODUCTS: Product[] = [
   {
     id: 'p-001', code: 'LL-TS-001', name: 'Waves off kanagawa',
-    description: 'Our signature premium cotton t-shirt. Crafted from 100% ring-spun cotton for an exceptionally soft feel. The perfect wardrobe staple.',
+    description: 'Featuring The Great Wave off Kanagawa, Hokusais legendary woodblock print that has inspired generations across the world. \n Crafted from premium French Terry cotton with a refined oversized fit, blending exceptional comfort with a timeless artistic legacy',
     price: 699, original_price: 799, category_id: 'cat-1', brand: 'LordLook',
     tags: ['bestseller', 'casual', 'cotton', 'french terry'],
     colors: [
@@ -40,7 +40,7 @@ export const MOCK_PRODUCTS: Product[] = [
   },
   {
     id: 'p-002', code: 'LL-SH-002', name: 'Dolphin',
-    description: 'A modern take on the classic Oxford shirt. Tailored slim fit with fine cotton poplin fabric. Ideal for smart-casual occasions.',
+    description: 'Where the sea whispers, the soul remembers. Every wave carries a story, every tide leaves a trace. \n Made from premium French Terry cotton in our signature oversized fit.',
     price: 599, original_price: 699, category_id: 'cat-2', brand: 'LordLook',
     tags: ['formal', 'slim-fit', 'oxford'],
     colors: [
