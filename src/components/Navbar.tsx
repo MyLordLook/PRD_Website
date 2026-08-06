@@ -11,10 +11,12 @@ const TRENDING = ['Linen Blazer', 'Silk Dress', 'Fine Sweater', 'Minimal Sandals
 
 // Logo configuration - easily adjustable
 const LOGO_CONFIG = {
-  height: 28, // Adjust logo height here
-  width: 140, // Adjust logo width here
-  mobileHeight: 24,
-  mobileWidth: 120,
+  height: 30, // Adjust logo height here
+  width: 150, // Adjust logo width here
+  mobileHeight: 32,
+  mobileWidth: 150,
+  //mobileHeight: 24,
+  //mobileWidth: 120,
 };
 
 export default function Navbar() {
@@ -122,7 +124,8 @@ export default function Navbar() {
                   style={{ height: LOGO_CONFIG.height, width: 'auto' }}
                 />
                 <img
-                  src={scrolled || !isHome ? '/Logo/logo black.png' : '/Logo/logo white.png'}
+                  src={scrolled || !isHome ? '/Logo/logo white.png' : '/Logo/logo white.png'}
+                  //  src={scrolled || !isHome ? '/Logo/logo black.png' : '/Logo/logo white.png'}
                   alt="Lord Look"
                   height={LOGO_CONFIG.mobileHeight}
                   width={LOGO_CONFIG.mobileWidth}
@@ -213,7 +216,7 @@ export default function Navbar() {
               </button>
               <Link to="/" onClick={() => setMenuOpen(false)} className="flex items-center">
                 <img
-                  src="/Logo/logo black.png"
+                  src="/Logo/logo black.png"  // /Logo/logo black.png
                   alt="Lord Look"
                   className="dark:hidden"
                   style={{ height: LOGO_CONFIG.mobileHeight, width: 'auto' }}

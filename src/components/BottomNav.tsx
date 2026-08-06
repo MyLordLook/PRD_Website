@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Home, Search, ShoppingBag, Heart } from 'lucide-react';
+import { Home, Store, ShoppingBag, Heart } from 'lucide-react';
 import { useCartStore } from '../store/cartStore';
 
 export default function BottomNav() {
@@ -8,7 +8,7 @@ export default function BottomNav() {
 
   const tabs = [
     { to: '/', label: 'Home', icon: Home },
-    { to: '/products', label: 'Shop', icon: Search },
+    { to: '/products', label: 'Shop', icon: Store },
     { to: '/wishlist', label: 'Wishlist', icon: Heart },
     { to: '/cart', label: 'Cart', icon: ShoppingBag, badge: cartCount },
   ];

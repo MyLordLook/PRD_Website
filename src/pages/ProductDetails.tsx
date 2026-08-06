@@ -8,11 +8,14 @@ import { useWishlistStore } from '../store/wishlistStore';
 import ProductCard from '../components/ProductCard';
 import StarRating from '../components/StarRating';
 
+
 const MOCK_REVIEWS = [
   { id: 'r1', user: 'Aryan S.', rating: 5, title: 'Absolutely love it!', body: 'Great quality fabric and perfect fit. Got tons of compliments.', date: 'Apr 2025' },
   { id: 'r2', user: 'Priya M.', rating: 4, title: 'Very comfortable', body: 'Fabric is soft, stitching is clean. Slightly oversized for me.', date: 'Mar 2025' },
   { id: 'r3', user: 'Dev K.', rating: 5, title: 'Best purchase!', body: 'Third time buying LordLook and never disappointed. Premium quality.', date: 'Mar 2025' },
 ];
+
+
 
 const SIZE_GUIDE = [
   { size: 'S', chest: '36"', waist: '30"', length: '26"' },
@@ -354,12 +357,30 @@ export default function ProductDetails() {
             )}
           </div>
         </div>
+      </div>
+
+      {/* Related products */}
+      {related.length > 0 && (
+        <div className="mt-16 pt-12 border-t border-[#e8e8e8] dark:border-[#2a2a2a]">
+          <h2 className="heading-editorial text-xl text-[#1a1a1a] dark:text-[#f0ede8] mb-8">You May Also Like</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-5">
+            {related.map((p) => (
+              <ProductCard key={p.id} product={p} />
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
 
         {/* Reviews */}
+        {/*  >>>
         <div className="mt-16 pt-12 border-t border-[#e8e8e8] dark:border-[#2a2a2a]">
           <h2 className="heading-editorial text-xl text-[#1a1a1a] dark:text-[#f0ede8] mb-8">Reviews</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {/* Rating summary */}
+            {/* >>>
             <div className="flex flex-col items-center justify-center border border-[#e8e8e8] dark:border-[#2a2a2a] p-8">
               <span className="heading-editorial text-5xl text-[#1a1a1a] dark:text-[#f0ede8] mb-2">{product.rating_avg.toFixed(1)}</span>
               <StarRating value={Math.round(product.rating_avg)} size={16} />
@@ -367,7 +388,7 @@ export default function ProductDetails() {
             </div>
 
             <div className="md:col-span-2 space-y-6">
-              {MOCK_REVIEWS.map((r) => (
+                {MOCK_REVIEWS.map((r) => (
                 <div key={r.id} className="border-b border-[#e8e8e8] dark:border-[#2a2a2a] pb-6 last:border-0">
                   <div className="flex items-center justify-between mb-2">
                     <span className="sans-light text-sm text-[#1a1a1a] dark:text-[#f0ede8] font-medium">{r.user}</span>
@@ -387,6 +408,8 @@ export default function ProductDetails() {
               ))}
 
               {/* Write review */}
+
+            {/*  >>>
               <div className="pt-4">
                 <h3 className="label-upper text-[10px] text-[#1a1a1a] dark:text-[#f0ede8] mb-4">Write a Review</h3>
                 <StarRating value={reviewRating} onChange={setReviewRating} size={20} />
@@ -406,23 +429,6 @@ export default function ProductDetails() {
                 >
                   Submit Review
                 </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Related products */}
-        {related.length > 0 && (
-          <div className="mt-16 pt-12 border-t border-[#e8e8e8] dark:border-[#2a2a2a]">
-            <h2 className="heading-editorial text-xl text-[#1a1a1a] dark:text-[#f0ede8] mb-8">You May Also Like</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-5">
-              {related.map((p) => (
-                <ProductCard key={p.id} product={p} />
-              ))}
-            </div>
-          </div>
-        )}
-      </div>
-    </div>
-  );
-}
+              </div>  
+            </div> <<< */} 
+         

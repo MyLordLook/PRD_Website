@@ -20,7 +20,7 @@ export const MOCK_PRODUCTS: Product[] = [
     ],
     keywords: ['white tshirt', 'basic tee', 'cotton tshirt', 'essential tee', 'plain tshirt', 'everyday wear'],
     is_trending: true, is_featured: true, is_active: true,
-    rating_avg: 4.5, rating_count: 128, created_at: '', updated_at: '',
+    rating_avg: 4.5, rating_count: 1, created_at: '', updated_at: '',
     product_images: [
       { id: 'img-1', product_id: 'p-001', url: '/Products/PD1-1.jpg', alt: 'Classic White Tee', sort_order: 0 },
       { id: 'img-2', product_id: 'p-001', url: '/Products/PD1-2.png', alt: 'Classic White Tee back', sort_order: 1 },

@@ -253,7 +253,7 @@ export default function Home() {
         variants={fadeUp}
       >
         <img
-          src="/banner6.png"
+          src="/Banner/banner6.png"
           alt="Editorial"
           className="w-full h-full object-cover"
           loading="lazy"

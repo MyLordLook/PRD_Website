@@ -31,9 +31,9 @@ export default function Contact() {
               <h2 className="label-upper text-[10px] text-[#1a1a1a] dark:text-[#f0ede8] mb-6">Contact Information</h2>
               <div className="space-y-5">
                 {[
-                  { icon: Mail, label: 'Email', value: 'hello@lordlook.in', href: 'mailto:hello@lordlook.in' },
-                  { icon: Phone, label: 'Phone', value: '+91 98765 43210', href: 'tel:+919876543210' },
-                  { icon: MapPin, label: 'Address', value: '42 Fashion Street, Bandra West, Mumbai — 400050', href: null },
+                  { icon: Mail, label: 'Email', value: 'Support@LordLook.com', href: 'mailto:Support@LordLook.com' },
+                  { icon: Phone, label: 'Phone', value: '+91 94971 60097', href: 'tel:+919497160097' },
+                  { icon: MapPin, label: 'Address', value: 'BOB Group PVT LTD, Madurai --  625107', href: null },
                 ].map(({ icon: Icon, label, value, href }) => (
                   <div key={label} className="flex items-start gap-4">
                     <div className="w-10 h-10 border border-[#e8e8e8] dark:border-[#2a2a2a] flex items-center justify-center shrink-0">
@@ -68,7 +68,7 @@ export default function Contact() {
             </div>
 
             <a
-              href="https://wa.me/919876543210?text=Hi%20LordLook%2C%20I%20have%20a%20question"
+              href="https://wa.me/9497160097?text=Hi%20LordLook%2C%20I%20have%20a%20question"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 p-5 border border-green-700 bg-green-700/5 hover:bg-green-700/10 transition-colors group"
