@@ -17,7 +17,7 @@ export default function About() {
       {/* Hero */}
       <section className="relative h-[50vh] sm:h-[60vh] overflow-hidden">
         <img
-          src="https://images.pexels.com/photos/1852759/pexels-photo-1852759.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          src="/Search_Bar/dolphin 6.png"
           alt="About LordLook"
           className="w-full h-full object-cover"
           loading="eager"
@@ -53,13 +53,13 @@ export default function About() {
           </div>
           <div className="relative">
             <img
-              src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src="/Search_Bar/banner6.png"
               alt="Brand story"
               className="w-full object-cover aspect-[4/5]"
               loading="lazy"
             />
             <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-[#1a1a1a] text-[#FAFAF8] p-5 sm:p-6">
-              <p className="heading-editorial text-3xl sm:text-4xl">50K+</p>
+              {/* <p className="heading-editorial text-3xl sm:text-4xl">50K+</p> */}
               <p className="label-upper text-[9px] text-[#f0ede8]/70 mt-1">Happy Customers</p>
             </div>
           </div>
@@ -86,7 +86,7 @@ export default function About() {
       </section>
 
       {/* Stats */}
-      <section className="py-16 sm:py-20 px-5 sm:px-8">
+     {/* <section className="py-16 sm:py-20 px-5 sm:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
             {[
@@ -102,10 +102,10 @@ export default function About() {
             ))}
           </div>
         </div>
-      </section>
+      </section>    */}
 
       {/* Team */}
-      <section className="bg-[#F5F5F3] dark:bg-[#1a1a1a] py-16 sm:py-20 px-5 sm:px-8">
+     {/* <section className="bg-[#F5F5F3] dark:bg-[#1a1a1a] py-16 sm:py-20 px-5 sm:px-8">
         <div className="max-w-4xl mx-auto">
           <p className="label-upper text-[9px] text-[#888888] text-center mb-2">The People</p>
           <h2 className="heading-editorial text-2xl sm:text-3xl text-[#1a1a1a] dark:text-[#f0ede8] text-center mb-12">Meet the Team</h2>
@@ -124,7 +124,7 @@ export default function About() {
             ))}
           </div>
         </div>
-      </section>
-    </div>
+      </section>*/}
+    </div>       
   );
 }

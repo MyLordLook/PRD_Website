@@ -6,7 +6,7 @@ import { ShippingAddress } from '../types';
 
 const STEPS = ['Address', 'Review'];
 
-const WHATSAPP_NUMBER = '919876543210';
+const WHATSAPP_NUMBER = '919497160097';
 
 export default function Checkout() {
   const [step, setStep] = useState(0);

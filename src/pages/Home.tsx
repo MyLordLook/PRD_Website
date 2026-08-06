@@ -328,7 +328,7 @@ export default function Home() {
           For Customized &amp; Bulk Orders
         </h2>
         <a
-          href="https://wa.me/919876543210?text=Hi%20LordLook%2C%20I%20want%20to%20place%20a%20bulk%20order"
+          href="https://wa.me/919497160097?text=Hi%20LordLook%2C%20I%20want%20to%20place%20a%20bulk%20order"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 px-8 py-3.5 bg-[#f0ede8] text-[#1a1a1a] text-xs tracking-widest uppercase font-light hover:bg-white active:scale-95 transition-all duration-200"

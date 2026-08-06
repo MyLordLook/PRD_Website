@@ -11,8 +11,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: 'p-001', code: 'LL-TS-001', name: 'Waves off kanagawa',
     description: 'Our signature premium cotton t-shirt. Crafted from 100% ring-spun cotton for an exceptionally soft feel. The perfect wardrobe staple.',
-    price: 799, original_price: 1299, category_id: 'cat-1', brand: 'LordLook',
-    tags: ['bestseller', 'casual', 'cotton'],
+    price: 699, original_price: 799, category_id: 'cat-1', brand: 'LordLook',
+    tags: ['bestseller', 'casual', 'cotton', 'french terry'],
     colors: [
       { name: 'White', hex: '#FFFFFF' },
       { name: 'Beige', hex: '#d1c29c' },
@@ -41,7 +41,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: 'p-002', code: 'LL-SH-002', name: 'Dolphin',
     description: 'A modern take on the classic Oxford shirt. Tailored slim fit with fine cotton poplin fabric. Ideal for smart-casual occasions.',
-    price: 1599, original_price: 2499, category_id: 'cat-2', brand: 'LordLook',
+    price: 599, original_price: 699, category_id: 'cat-2', brand: 'LordLook',
     tags: ['formal', 'slim-fit', 'oxford'],
     colors: [
   { name: 'Royal Blue', hex: '#3E5F9E' },

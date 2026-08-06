@@ -53,22 +53,32 @@ export default function Contact() {
             </div>
 
             <div>
-              <h3 className="label-upper text-[10px] text-[#1a1a1a] dark:text-[#f0ede8] mb-4">Follow Us</h3>
-              <div className="flex gap-3">
-                {[Instagram, Twitter, MessageCircle].map((Icon, i) => (
-                  <a
-                    key={i}
-                    href="#"
-                    className="w-10 h-10 border border-[#e8e8e8] dark:border-[#2a2a2a] flex items-center justify-center text-[#888888] hover:bg-[#1a1a1a] dark:hover:bg-[#f0ede8] hover:text-[#FAFAF8] dark:hover:text-[#1a1a1a] transition-all"
-                  >
-                    <Icon size={16} strokeWidth={1.5} />
-                  </a>
-                ))}
-              </div>
-            </div>
+               <h3 className="label-upper text-[10px] text-[#1a1a1a] dark:text-[#f0ede8] mb-4">
+                   Follow Us
+                 </h3>
+
+                 <div className="flex gap-3">
+                    {[
+                      { icon: Instagram, href: "https://www.instagram.com/thelordlook" }, // Paste Instagram URL here
+                      { icon: Twitter, href: "https://twitter.com/thelordlook" }, // Paste Twitter/X URL here
+                      { icon: MessageCircle, href: "https://wa.me/919497160097" }, // Paste WhatsApp/Telegram URL here
+                    ].map(({ icon: Icon, href }, i) => (
+                      <a
+                        key={i}
+                        href={href}
+                        target={href !== "#" ? "_blank" : undefined}
+                        rel={href !== "#" ? "noopener noreferrer" : undefined}
+                        className="w-10 h-10 border border-[#e8e8e8] dark:border-[#2a2a2a] flex items-center justify-center text-[#888888] hover:bg-[#1a1a1a] dark:hover:bg-[#f0ede8] hover:text-[#FAFAF8] dark:hover:text-[#1a1a1a] transition-all"
+                        aria-label={Icon.name}
+                      >
+                        <Icon size={16} strokeWidth={1.5} />
+                      </a>
+                    ))}
+                  </div>
+                </div>
 
             <a
-              href="https://wa.me/9497160097?text=Hi%20LordLook%2C%20I%20have%20a%20question"
+              href="https://wa.me/919497160097?text=Hi%20LordLook%2C%20I%20have%20a%20question"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 p-5 border border-green-700 bg-green-700/5 hover:bg-green-700/10 transition-colors group"
@@ -89,7 +99,7 @@ export default function Contact() {
                   <span>Monday – Saturday</span><span className="text-[#1a1a1a] dark:text-[#f0ede8]">10am – 7pm</span>
                 </div>
                 <div className="flex justify-between sans-light text-[#888888]">
-                  <span>Sunday</span><span className="text-[#1a1a1a] dark:text-[#f0ede8]">11am – 4pm</span>
+                  <span>Sunday</span><span className="text-[#1a1a1a] dark:text-[#f0ede8]">11am – 10pm</span>
                 </div>
               </div>
             </div>

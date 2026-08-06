@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Instagram, Twitter, Facebook, Youtube } from 'lucide-react';
+import { Instagram, Twitter } from 'lucide-react';
 
 // Logo configuration - keeps consistent with Navbar
 const FOOTER_LOGO_CONFIG = {
@@ -78,11 +78,19 @@ export default function Footer() {
               Premium fashion for the modern individual. Quality you can feel, style you can own.
             </p>
             <div className="flex gap-3">
-              {[Instagram, Twitter, Facebook, Youtube].map((Icon, i) => (
+              {[
+                { icon: Instagram, href: "https://www.instagram.com/thelordlook" }, // Paste Instagram URL here
+                { icon: Twitter, href: "https://twitter.com/thelordlook" },   // Paste Twitter/X URL here
+                // { icon: Facebook, href: "https://www.facebook.com/thelordlook" },  // Paste Facebook URL here
+                // { icon: Youtube, href: "https://www.youtube.com/thelordlook" },   // Paste YouTube URL here
+              ].map(({ icon: Icon, href }, i) => (
                 <a
                   key={i}
-                  href="#"
+                  href={href}
+                  target={href !== "#" ? "_blank" : undefined}
+                  rel={href !== "#" ? "noopener noreferrer" : undefined}
                   className="text-[#888888] hover:text-[#1a1a1a] dark:hover:text-[#f0ede8] transition-colors"
+                  aria-label={Icon.name}
                 >
                   <Icon size={15} strokeWidth={1.5} />
                 </a>
@@ -97,9 +105,9 @@ export default function Footer() {
               {[
                 { label: 'New Arrivals', to: '/products' },
                 { label: 'T-Shirts', to: '/products?category=cat-1' },
-                { label: 'Shirts', to: '/products?category=cat-2' },
-                { label: 'Hoodies', to: '/products?category=cat-3' },
-                { label: 'Trousers', to: '/products?category=cat-4' },
+                // { label: 'Shirts', to: '/products?category=cat-2' },
+                // { label: 'Hoodies', to: '/products?category=cat-3' },
+                // { label: 'Trousers', to: '/products?category=cat-4' },
                 { label: 'Sale', to: '/products' },
               ].map(({ label, to }) => (
                 <li key={label}>
@@ -113,12 +121,24 @@ export default function Footer() {
 
           {/* Help */}
           <div>
-            <h4 className="label-upper text-[#1a1a1a] dark:text-[#f0ede8] mb-4">Help</h4>
+            <h4 className="label-upper text-[#1a1a1a] dark:text-[#f0ede8] mb-4">
+              Help
+            </h4>
+
             <ul className="space-y-2.5">
-              {['Size Guide', 'Shipping Info', 'Returns & Exchanges', 'Track Order', 'FAQ'].map((l) => (
-                <li key={l}>
-                  <a href="#" className="sans-light text-xs text-[#888888] hover:text-[#1a1a1a] dark:hover:text-[#f0ede8] transition-colors">
-                    {l}
+              {[
+                { label: 'Size Guide', href: '#' },          // Add link later
+                { label: 'Shipping Info', href: '#' },       // Add link later
+                { label: 'Returns & Exchanges', href: '#' }, // Add link later
+                { label: 'Track Order', href: 'https://www.dtdc.com/track-your-shipment/' },    // Add link later
+                { label: 'FAQ', href: '#' },                 // Add link later
+              ].map(({ label, href }) => (
+                <li key={label}>
+                  <a
+                    href={href}
+                    className="sans-light text-xs text-[#888888] hover:text-[#1a1a1a] dark:hover:text-[#f0ede8] transition-colors"
+                  >
+                    {label}
                   </a>
                 </li>
               ))}
@@ -131,16 +151,15 @@ export default function Footer() {
             <ul className="space-y-2.5">
               <li><Link to="/about" className="sans-light text-xs text-[#888888] hover:text-[#1a1a1a] dark:hover:text-[#f0ede8] transition-colors">About Us</Link></li>
               <li><Link to="/contact" className="sans-light text-xs text-[#888888] hover:text-[#1a1a1a] dark:hover:text-[#f0ede8] transition-colors">Contact</Link></li>
-              <li><a href="#" className="sans-light text-xs text-[#888888] hover:text-[#1a1a1a] dark:hover:text-[#f0ede8] transition-colors">Careers</a></li>
-              <li><a href="#" className="sans-light text-xs text-[#888888] hover:text-[#1a1a1a] dark:hover:text-[#f0ede8] transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="sans-light text-xs text-[#888888] hover:text-[#1a1a1a] dark:hover:text-[#f0ede8] transition-colors">Terms of Service</a></li>
+              {/* <li><a href="#" className="sans-light text-xs text-[#888888] hover:text-[#1a1a1a] dark:hover:text-[#f0ede8] transition-colors">Careers</a></li> */}
+              {/* <li><a href="#" className="sans-light text-xs text-[#888888] hover:text-[#1a1a1a] dark:hover:text-[#f0ede8] transition-colors">Privacy Policy</a></li> */}
+              {/* <li><a href="#" className="sans-light text-xs text-[#888888] hover:text-[#1a1a1a] dark:hover:text-[#f0ede8] transition-colors">Terms of Service</a></li> */}
             </ul>
           </div>
         </div>
 
         <div className="border-t border-[#e8e8e8] dark:border-[#2a2a2a] pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="sans-light text-xs text-[#888888]">&copy; {new Date().getFullYear()} LordLook. All rights reserved.</p>
-          <p className="sans-light text-xs text-[#888888]">Payments by Razorpay &bull; UPI &bull; Cards</p>
         </div>
       </div>
     </footer>
