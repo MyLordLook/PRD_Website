@@ -125,24 +125,26 @@ export default function Footer() {
               Help
             </h4>
 
-            <ul className="space-y-2.5">
-              {[
-                { label: 'Size Guide', href: '#' },          // Add link later
-                { label: 'Shipping Info', href: '#' },       // Add link later
-                { label: 'Returns & Exchanges', href: '#' }, // Add link later
-                { label: 'Track Order', href: 'https://www.dtdc.com/track-your-shipment/' },    // Add link later
-                { label: 'FAQ', href: '#' },                 // Add link later
-              ].map(({ label, href }) => (
-                <li key={label}>
-                  <a
-                    href={href}
-                    className="sans-light text-xs text-[#888888] hover:text-[#1a1a1a] dark:hover:text-[#f0ede8] transition-colors"
-                  >
-                    {label}
-                  </a>
-                </li>
-              ))}
-            </ul>
+              <ul className="space-y-2.5">
+                {[
+                  { label: 'Size Guide', href: '/HTML/SIZE GUIDE.html' },
+                  { label: 'Shipping Info', href: '/HTML/Shipping info.html' },
+                  { label: 'Privacy Policy', href: '/HTML/Privacy Policy.html' },
+                  { label: 'Track Order', href: 'https://www.dtdc.com/track-your-shipment/' },
+                  { label: 'FAQ', href: '/HTML/FAQ.html' },
+                ].map(({ label, href }) => (
+                  <li key={label}>
+                    <a
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="sans-light text-xs text-[#888888] hover:text-[#1a1a1a] dark:hover:text-[#f0ede8] transition-colors"
+                    >
+                      {label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
           </div>
 
           {/* Company */}

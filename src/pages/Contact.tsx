@@ -96,11 +96,11 @@ export default function Contact() {
               <h3 className="label-upper text-[9px] text-[#1a1a1a] dark:text-[#f0ede8] mb-4">Support Hours</h3>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between sans-light text-[#888888]">
-                  <span>Monday – Saturday</span><span className="text-[#1a1a1a] dark:text-[#f0ede8]">10am – 7pm</span>
+                  <span>Monday – Sunday</span><span className="text-[#1a1a1a] dark:text-[#f0ede8]">24 / 7</span>
                 </div>
-                <div className="flex justify-between sans-light text-[#888888]">
+                {/* <div className="flex justify-between sans-light text-[#888888]">
                   <span>Sunday</span><span className="text-[#1a1a1a] dark:text-[#f0ede8]">11am – 10pm</span>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

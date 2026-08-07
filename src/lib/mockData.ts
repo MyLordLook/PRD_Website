@@ -2,9 +2,9 @@ import { Product, Category } from '../types';
 
 export const MOCK_CATEGORIES: Category[] = [
   { id: 'cat-1', name: 'T-Shirts', slug: 'tshirts', description: 'Premium tees', image_url: 'https://images.pexels.com/photos/1656684/pexels-photo-1656684.jpeg?auto=compress&cs=tinysrgb&w=400', created_at: '' },
-  { id: 'cat-2', name: 'Shirts', slug: 'shirts', description: 'Formal & casual', image_url: 'https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=400', created_at: '' },
-  { id: 'cat-3', name: 'Hoodies', slug: 'hoodies', description: 'Cozy hoodies', image_url: 'https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=400', created_at: '' },
-  { id: 'cat-4', name: 'Trousers', slug: 'trousers', description: 'Slim & regular fit', image_url: 'https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=400', created_at: '' },
+ // { id: 'cat-2', name: 'Shirts', slug: 'shirts', description: 'Formal & casual', image_url: 'https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=400', created_at: '' },
+ // { id: 'cat-3', name: 'Hoodies', slug: 'hoodies', description: 'Cozy hoodies', image_url: 'https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=400', created_at: '' },
+ // { id: 'cat-4', name: 'Trousers', slug: 'trousers', description: 'Slim & regular fit', image_url: 'https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=400', created_at: '' },
 ];
 
 export const MOCK_PRODUCTS: Product[] = [
@@ -31,11 +31,12 @@ export const MOCK_PRODUCTS: Product[] = [
 
     ],
     product_sizes: [
+      { id: 's5', product_id: 'p-001', size: 'XS', stock: 5 },
       { id: 's1', product_id: 'p-001', size: 'S', stock: 15 },
       { id: 's2', product_id: 'p-001', size: 'M', stock: 20 },
       { id: 's3', product_id: 'p-001', size: 'L', stock: 18 },
       { id: 's4', product_id: 'p-001', size: 'XL', stock: 10 },
-      { id: 's5', product_id: 'p-001', size: 'XXL', stock: 5 },
+      
     ],
   },
   {
@@ -60,6 +61,7 @@ export const MOCK_PRODUCTS: Product[] = [
 
     ],
     product_sizes: [
+      { id: 's10', product_id: 'p-002', size: 'XS', stock: 5 },
       { id: 's6', product_id: 'p-002', size: 'S', stock: 8 },
       { id: 's7', product_id: 'p-002', size: 'M', stock: 12 },
       { id: 's8', product_id: 'p-002', size: 'L', stock: 14 },

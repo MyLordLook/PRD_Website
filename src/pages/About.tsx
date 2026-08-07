@@ -37,18 +37,32 @@ export default function About() {
       <section className="max-w-4xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="label-upper text-[9px] text-[#888888] mb-3">Est. 2021</p>
+            <p className="label-upper text-[9px] text-[#888888] mb-3">Est. 2026</p>
             <h2 className="heading-editorial text-2xl sm:text-3xl text-[#1a1a1a] dark:text-[#f0ede8] mb-6 leading-tight">
-              Born in Mumbai,<br />Made for the World
+              LordLook,<br /> wasn't born in a boardroom or a business meeting.
             </h2>
             <p className="sans-light text-sm text-[#888888] leading-relaxed mb-4">
-              LordLook was founded with a singular vision: to make premium fashion accessible to every modern Indian. We were tired of choosing between quality and affordability — so we built the solution.
+              It began with a group of friends who met during online classes in 2022. What started as conversations on Microsoft Teams soon turned into friendships that followed us to Madurai, Tamil Nadu, where we spent four unforgettable years learning, growing, creating, and building memories together.
             </p>
             <p className="sans-light text-sm text-[#888888] leading-relaxed mb-4">
-              Starting from a small studio in Mumbai's Bandra district, our founder Rohan Mehta began sourcing the finest cotton and linen fabrics directly from mills, eliminating the middlemen that inflate prices.
+              As graduation approached, life began taking each of us in different directions. Careers, cities, and responsibilities were waiting. Like every chapter, ours seemed to be coming to an end.
+ 
+              But we weren't ready to let that happen.
+              
+              Instead of watching our journey fade into memories, we decided to create something that would continue to bring us together—something that carried a piece of each one of us.
+              
+              That idea became LordLook.
             </p>
             <p className="sans-light text-sm text-[#888888] leading-relaxed">
-              Today, over 50,000 customers across India trust LordLook for their daily wardrobe. Each piece is still designed with the same obsessive attention to detail that started it all.
+              More Than a Brand
+ 
+              Every member of our team brought something different to the table.
+              
+              Some of us were passionate about design. Others found joy behind the camera. Some were driven by technology, while others understood branding, storytelling, and creativity. Rather than letting those talents drift apart, we brought them together under one vision.
+              
+              Fashion became the perfect canvas.
+              
+              Every collection we create reflects not only our creativity but also our shared journey. Behind every design is a conversation, a late-night discussion, countless revisions, and the belief that meaningful things are never built alone.
             </p>
           </div>
           <div className="relative">
@@ -60,7 +74,7 @@ export default function About() {
             />
             <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-[#1a1a1a] text-[#FAFAF8] p-5 sm:p-6">
               {/* <p className="heading-editorial text-3xl sm:text-4xl">50K+</p> */}
-              <p className="label-upper text-[9px] text-[#f0ede8]/70 mt-1">Happy Customers</p>
+              <p className="label-upper text-[9px] text-[#f0ede8]/70 mt-1">Find The Lord In You</p>
             </div>
           </div>
         </div>
