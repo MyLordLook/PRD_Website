@@ -37,7 +37,7 @@ export default function About() {
       <section className="max-w-4xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="label-upper text-[9px] text-[#888888] mb-3">Est. 2026</p>
+            <p className="label-upper text-[9px] text-[#888888] mb-3">Est. 2025</p>
             <h2 className="heading-editorial text-2xl sm:text-3xl text-[#1a1a1a] dark:text-[#f0ede8] mb-6 leading-tight">
               LordLook,<br /> wasn't born in a boardroom or a business meeting.
             </h2>

@@ -9,7 +9,7 @@ import ProductCard from '../components/ProductCard';
 const SLIDES = [
   {
     id: 1,
-    tagline: '',
+    tagline: 'Reign Your Style!',
     img: '/Banner/banner1.jpg',
     link: '/products',
   },
@@ -21,7 +21,7 @@ const SLIDES = [
   },
   {
     id: 3,
-    tagline: 'Refined in Every\nDetail',
+    tagline: 'Custom Printing\nFor Your Style',
     img: '/Banner/banner3.jpg',
     link: '/products?category=cat-2',
   },
@@ -33,7 +33,7 @@ const SLIDES = [
   },
   {
     id: 5,
-    tagline: 'Wear What\nMatters',
+    tagline: 'More Fashion\n Sooner Than You Think',
     img: '/Banner/banner5.jpg',
     link: '/products',
   },
