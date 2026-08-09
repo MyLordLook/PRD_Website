@@ -153,10 +153,12 @@ export default function Home() {
       >
         <p className="label-upper text-[#888888] mb-6">Introduction</p>
         <blockquote className="serif-italic text-xl sm:text-2xl md:text-3xl text-[#1a1a1a] dark:text-[#f0ede8] leading-relaxed">
-          "A clean canvas for the modern minimalist. Structured linen meets delicate raw silk."
+          "When timeless art meets contemporary expression"
         </blockquote>
         <p className="sans-light text-xs text-[#888888] mt-5 leading-relaxed max-w-md mx-auto">
-          LordLook summer collection. Woven from premium fabrics, tailored, sculptural, draped, and neutral, from wardrobe themes to within-code transient fineries.
+          LordLook creates premium everyday essentials defined by refined silhouettes, elevated comfort, and carefully selected materials. Our collections pair quality craftsmanship with distinctive graphic narratives drawing inspiration from art, history, culture, and the world around us.
+ 
+          From premium fabrics to thoughtfully developed prints, every piece is designed to be more than clothing; a wearable expression of character, story, and style.
         </p>
       </motion.section>
 
