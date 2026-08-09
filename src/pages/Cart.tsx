@@ -163,7 +163,7 @@ export default function Cart() {
                 )}
                 {couponError && <p className="sans-light text-xs text-red-500 mt-1.5">{couponError}</p>}
                 {couponSuccess && <p className="sans-light text-xs text-green-700 mt-1.5">{couponSuccess}</p>}
-                {!coupon && <p className="sans-light text-[10px] text-[#888888] mt-1.5">Try: LORDLOOK10, WELCOME20, FLAT200</p>}
+                {!coupon && <p className="sans-light text-[10px] text-[#888888] mt-1.5">Try: LORDLOOK10, SUMMER15</p>}
               </div>
 
               {/* Totals */}

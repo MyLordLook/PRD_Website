@@ -263,8 +263,8 @@ export const SEARCH_SUGGESTIONS = [
 ];
 
 export const MOCK_COUPONS: Record<string, { discount_type: 'percentage' | 'fixed'; discount_value: number; min_order_amount: number; max_discount: number; description: string }> = {
-  'LORDLOOK10': { discount_type: 'percentage', discount_value: 10, min_order_amount: 999, max_discount: 500, description: '10% off on orders above ₹999' },
-  'WELCOME20': { discount_type: 'percentage', discount_value: 20, min_order_amount: 1499, max_discount: 800, description: '20% off for new customers' },
+  'LORDLOOK10': { discount_type: 'percentage', discount_value: 10, min_order_amount: 4999, max_discount: 500, description: '10% off on orders above ₹4999' },
+  'WELCOME20': { discount_type: 'percentage', discount_value: 20, min_order_amount: 5499, max_discount: 800, description: '20% off for new customers' },
   'FLAT200': { discount_type: 'fixed', discount_value: 200, min_order_amount: 1999, max_discount: 200, description: '₹200 flat off on orders above ₹1999' },
-  'SUMMER15': { discount_type: 'percentage', discount_value: 15, min_order_amount: 1299, max_discount: 600, description: '15% summer discount' },
+  'SUMMER15': { discount_type: 'percentage', discount_value: 15, min_order_amount: 4999, max_discount: 600, description: '15% summer discount' },
 };
