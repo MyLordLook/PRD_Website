@@ -11,7 +11,8 @@ export default function Cart() {
   const [couponSuccess, setCouponSuccess] = useState('');
 
   const sub = subtotal();
-  const shipping = sub >= 999 ? 0 : 99;
+  // const shipping = sub >= 999 ? 0 : 70;
+  const shipping = sub >= 999 ? 0 : 0;
   const discountAmt = discount;
   const total = sub - discountAmt + shipping;
 
@@ -201,7 +202,7 @@ export default function Cart() {
               </Link>
 
               <p className="sans-light text-[10px] text-[#888888] text-center mt-3">
-                Secure checkout · Razorpay
+                Secure checkout · UPI ·  Razorpay - Coming Soon
               </p>
             </div>
           </div>

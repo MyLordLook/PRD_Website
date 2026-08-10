@@ -19,7 +19,8 @@ export default function Checkout() {
   const { items, subtotal, discount, coupon, clearCart } = useCartStore();
 
   const sub = subtotal();
-  const shipping = sub >= 999 ? 0 : 99;
+  const shipping = sub >= 999 ? 0 : 0;
+  // const shipping = sub >= 999 ? 0 : 80;
   const total = sub - discount + shipping;
 
   const handleAddressSubmit = (e: React.FormEvent) => {
