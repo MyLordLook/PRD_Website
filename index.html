@@ -60,6 +60,22 @@
 
     <!-- ===== END GOOGLE ANALYTICS CODE ===== -->
 
+     <script>
+      (function () {
+        var search = window.location.search;
+
+        if (search && search.startsWith("?/")) {
+          var path = search.substring(1).split("&")[0];
+
+          window.history.replaceState(
+            null,
+            null,
+            path + window.location.hash
+          );
+        }
+      })();
+    </script>
+
     <script type="module" crossorigin src="/assets/index-ba0mTqQI.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-CX1DcASN.css">
   </head>
