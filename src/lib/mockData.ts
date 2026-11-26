@@ -42,7 +42,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: 'p-002', code: 'LL-SH-002', name: 'Dolphin',
     description: 'Where the sea whispers, the soul remembers. Every wave carries a story, every tide leaves a trace. \n Made from premium French Terry cotton in our signature oversized fit.',
-    price: 599, original_price: 699, category_id: 'cat-2', brand: 'LordLook',
+    price: 599, original_price: 999, category_id: 'cat-2', brand: 'LordLook',
     tags: ['formal', 'slim-fit', 'oxford'],
     colors: [
   { name: 'Royal Blue', hex: '#3E5F9E' },
@@ -71,7 +71,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: 'p-003', code: 'LL-HD-003', name: 'The Fall of Icarus',
     description: 'Featuring \'The Fall of Icarus\', inspired by the timeless tale of ambition, ascent, and the consequences of flying too close to the sun. Crafted from premium French Terry cotton with a refined oversized fit, blending everyday comfort with a thought-provoking artistic narrative.',
-    price: 699, original_price: 799, category_id: 'cat-3', brand: 'LordLook',
+    price: 699, original_price: 999, category_id: 'cat-3', brand: 'LordLook',
     tags: ['hoodie', 'fleece', 'winter'],
     colors: [
 
@@ -100,7 +100,7 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: 'p-004', code: 'LL-TR-004', name: 'Dream Reality',
     description: 'Featuring a fragmented portrait exploring the space between dreams and reality, Dream Reality challenges perception and invites you to see beyond the familiar. Crafted from premium French Terry cotton in a refined oversized fit, it pairs everyday comfort with a thought-provoking visual expression.',
-    price: 699, original_price: 799, category_id: 'cat-4', brand: 'LordLook',
+    price: 699, original_price: 999, category_id: 'cat-4', brand: 'LordLook',
     tags: ['chino', 'casual', 'slim'],
     colors: [
       { name: 'Beige', hex: '#F5F5DC' },
@@ -125,25 +125,24 @@ export const MOCK_PRODUCTS: Product[] = [
       { id: 's18', product_id: 'p-004', size: 'L', stock: 10 },
       { id: 's19', product_id: 'p-004', size: 'XL', stock: 6 },
     ],
-  }, /*  >>>>>>>>> disbaled
+  },
   {
-    id: 'p-005', code: 'LL-TS-005', name: 'Graphic Street Tee',
-    description: 'Bold street-art inspired graphic print on heavy 220GSM cotton. A statement piece for the fashion-forward individual.',
-    price: 999, original_price: 1599, category_id: 'cat-1', brand: 'LordLook',
+    id: 'p-005', code: 'LL-TS-005', name: 'Caffeine and Chaos',
+    description: 'A bold graphic that captures the beautiful chaos of coffee-fuelled days and the energy of doing things your own way. A little caffeine, a little chaos, and a whole different personality.',
+    price: 599, original_price: 999, category_id: 'cat-1', brand: 'LordLook',
     tags: ['graphic', 'streetwear', 'bold'],
     colors: [
       { name: 'Black', hex: '#1A1A1A' },
-      { name: 'White', hex: '#FFFFFF' },
-      { name: 'Red', hex: '#CC2936' },
+      { name: 'Green', hex: '#24572A' },
+
     ],
     keywords: ['graphic tee', 'streetwear', 'printed tshirt', 'bold print', 'urban fashion', 'statement tee'],
     is_trending: true, is_featured: true, is_active: true,
     rating_avg: 4.3, rating_count: 156, created_at: '', updated_at: '',
     product_images: [
-      { id: 'img-25', product_id: 'p-005', url: 'https://images.pexels.com/photos/1021693/pexels-photo-1021693.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Graphic Tee front', sort_order: 0 },
-      { id: 'img-26', product_id: 'p-005', url: 'https://images.pexels.com/photos/1656684/pexels-photo-1656684.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Graphic Tee back', sort_order: 1 },
-      { id: 'img-27', product_id: 'p-005', url: 'https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Graphic Tee detail', sort_order: 2 },
-      { id: 'img-28', product_id: 'p-005', url: 'https://images.pexels.com/photos/1192609/pexels-photo-1192609.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Graphic Tee styled', sort_order: 3 },
+      { id: 'img-25', product_id: 'p-005', url: '/Products/PD5/PD5-1.png', alt: 'T-Shirt front', sort_order: 0 },
+      { id: 'img-26', product_id: 'p-004', url: '/Products/PD5/PD5-2.png', alt: 'T-Shirt back', sort_order: 1 },
+     
     ],
     product_sizes: [
       { id: 's19', product_id: 'p-005', size: 'XS', stock: 5 },
@@ -154,24 +153,21 @@ export const MOCK_PRODUCTS: Product[] = [
     ],
   },
   {
-    id: 'p-006', code: 'LL-SH-006', name: 'Linen Summer Shirt',
-    description: 'Lightweight and breathable linen shirt perfect for warm weather. Features a relaxed fit and mother-of-pearl buttons.',
-    price: 1399, original_price: 2199, category_id: 'cat-2', brand: 'LordLook',
+    id: 'p-006', code: 'LL-SH-006', name: 'Meet DINO',
+    description: 'Sometimes, the best response is no response at all. A little distance from the noise, a moment to disconnect, and the freedom to be unavailable without feeling the need to explain.',
+    price: 599, original_price: 999, category_id: 'cat-2', brand: 'LordLook',
     tags: ['linen', 'summer', 'casual'],
     colors: [
-      { name: 'Sky Blue', hex: '#87CEEB' },
-      { name: 'White', hex: '#FFFFFF' },
-      { name: 'Sand', hex: '#C2B280' },
-      { name: 'Sage', hex: '#9DC183' },
+      
+      { name: 'Black', hex: '#1A1A1A' },
+  
     ],
     keywords: ['linen shirt', 'summer shirt', 'breathable shirt', 'vacation wear', 'beach shirt', 'lightweight shirt'],
     is_trending: false, is_featured: true, is_active: true,
     rating_avg: 4.6, rating_count: 43, created_at: '', updated_at: '',
     product_images: [
-      { id: 'img-21', product_id: 'p-006', url: 'https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Linen Shirt front', sort_order: 0 },
-      { id: 'img-22', product_id: 'p-006', url: 'https://images.pexels.com/photos/2897531/pexels-photo-2897531.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Linen Shirt detail', sort_order: 1 },
-      { id: 'img-23', product_id: 'p-006', url: 'https://images.pexels.com/photos/1852759/pexels-photo-1852759.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Linen Shirt styled', sort_order: 2 },
-      { id: 'img-24', product_id: 'p-006', url: 'https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Linen Shirt back', sort_order: 3 },
+      { id: 'img-27', product_id: 'p-006', url: '/Products/PD6/PD6-1.png', alt: 'T-Shirt front', sort_order: 0 },
+      { id: 'img-28', product_id: 'p-006', url: '/Products/PD6/PD6-2.jpeg', alt: 'T-Shirt back', sort_order: 1 },
     ],
     product_sizes: [
       { id: 's24', product_id: 'p-006', size: 'S', stock: 4 },
@@ -179,7 +175,7 @@ export const MOCK_PRODUCTS: Product[] = [
       { id: 's26', product_id: 'p-006', size: 'L', stock: 7 },
       { id: 's27', product_id: 'p-006', size: 'XL', stock: 5 },
     ],
-  },
+  },  /*  >>>>>>>>> disbaled
   {
     id: 'p-007', code: 'LL-HD-007', name: 'Zip-Up Track Hoodie',
     description: 'Athletic zip-up hoodie with moisture-wicking inner lining. Perfect for gym sessions or casual streetwear.',
